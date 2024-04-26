@@ -1,0 +1,253 @@
+body{
+    overflow-x: hidden;
+}
+
+.carousel-item img {
+    max-height: 750px; /* Default max height */
+    width: auto;
+    object-fit: cover;
+}
+
+/* Smaller devices */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px;
+    }
+}
+
+
+/* Cards Repsonsive start */
+.row{
+    margin-left: 5vw !important; 
+    margin-right: 5vw !important; 
+    margin-bottom: 4vw !important;
+}
+
+@media only screen and (min-width: 1460px) and (max-width: 1590px) {
+    .row {
+        margin-left: 5vw !important; 
+        margin-right: 5vw !important;
+    }
+
+    .card{
+        width: 20rem !important;
+    }
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1460px) {
+    .row {
+        margin-left: 5vw !important; 
+        margin-right: 5vw !important;
+    }
+
+    .card{
+        width: 17rem !important;
+    }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1250px) {
+    .row {
+        margin-left: 2vw !important; 
+        margin-right: 2vw !important;
+    }
+
+    .card{
+        width: 17rem !important;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1150px) {
+    .row {
+        margin-left: 2vw !important; 
+        margin-right: 2vw !important;
+    }
+
+    .card{
+        width: 15rem !important;
+    }
+}
+/* Cards Repsonsive end */
+
+
+.carousel-item img {
+    opacity: 1;
+    filter: brightness(.60);
+    -webkit-filter: brightness(.60);
+}
+
+.carousel-caption{
+    transform: translateY(-50%);
+    bottom: initial;
+    top: 55%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
+
+
+.card-img-top {
+    height: 45vh; /* Set a fixed height for the card images */
+    object-fit: cover; /* Maintain aspect ratio and crop image */
+}
+
+.col{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.call{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#searchTerm{
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+    padding-left: 1.5vw;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 30vw;
+    font-size: 2rem;
+}
+
+#mealSearch{
+    width: 8vw;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 2rem;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Button Size fixed */
+.btn{
+    width: 10rem;
+
+}
+
+
+/* Cards */
+.fs-new{
+    font-size: 2rem !important;
+}
+
+.mt-new{
+    margin-top: 1rem !important;
+}
+
+.display-new{
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/* Cards Responsive Start*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1480px) {
+    .fs-new{
+        font-size: 1.75rem !important;
+    }
+    .mt-new{
+        margin-top: 0.75rem !important;
+    }
+    .display-new{
+        font-size: calc(1.6rem + 4.25vw);
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+    .fs-new{
+        font-size: 1.5rem !important;
+    }
+    .mt-new{
+        margin-top: 0.5rem !important;
+    }
+    .display-new{
+        font-size: calc(1.5rem + 4vw);
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .fs-new{
+        font-size: 1.2rem !important;
+    }
+    .mt-new{
+        margin-top: 0rem !important;
+    }
+    .display-new{
+        font-size: calc(1.2rem + 3vw);
+        font-weight: 300;
+        line-height: 1;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .fs-new{
+        font-size: 1rem !important;
+    }
+    .mt-new{
+        margin-top: 0rem !important;
+    }
+    .display-new{
+        font-size: calc(1rem + 2.5vw);
+        font-weight: 300;
+        line-height: 1;
+    }
+    .text-center{
+        text-align: start !important;
+    }
+    .carousel-caption{
+        width: 100%;
+        position: absolute;
+        left: 0rem;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .fs-new{
+        font-size: 0.7rem !important;
+    }
+    .mt-new{
+        margin-top: 0rem !important;
+    }
+    .display-new{
+        font-size: calc(1rem + 2.5vw);
+        font-weight: 300;
+        line-height: 1;
+    }
+}
+/* Cards Responsive End*/
