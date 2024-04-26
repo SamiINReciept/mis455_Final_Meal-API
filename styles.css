@@ -157,6 +157,10 @@ Cards Repsonsive end */
     margin-top: 3vw;
 }
 
+.row{
+    margin-bottom: 5vw;
+}
+
 .card-title{
     font-size: 3rem;
 }
