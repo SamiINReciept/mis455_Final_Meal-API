@@ -21,7 +21,13 @@ function display(data) {
             var btn = document.createElement("button");
             btn.textContent = "Show All";
             
-            btn.onclick = newDisplay(data);
+            oldContainer.appendChild(btn);
+            btn.classList.add("jsbtn");
+
+            btn.onclick = function(){
+                newDisplay(data);
+                this.parentNode.removeChild(this)
+            };
             break;
         }
 

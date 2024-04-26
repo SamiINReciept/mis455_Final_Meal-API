@@ -176,6 +176,35 @@ Cards Repsonsive end */
     font-size: 1.2rem;
 }
 
+
+.jsbtn{
+    width: 8vw;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+}
+
+.jsbtn:hover{
+    background-color: #0d6efd;
+    color: white;
+    transform: scale(1.05);
+    transition: color background-color 0.5s, transform 0.5s;
+    -webkit-transition: color background-color 0.5s, transform 0.5s;
+    -moz-transition: color background-color 0.5s, transform 0.5s;
+    -ms-transition: color background-color 0.5s, transform 0.5s;
+    -o-transition: color background-color 0.5s, transform 0.5s;
+}
+
+/* Pressed effect */
+.jsbtn:active{
+    transform: scale(0.9);
+    transition: transform 0.1s;
+}
+
 /* .card-body{
     display: flex;
     flex-direction: column;
