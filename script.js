@@ -1,6 +1,6 @@
 function connect(){
     var searchTerm = document.getElementById("searchTerm").value;
-    searchTerm.value = "";
+    document.getElementById("searchTerm").value = "";
     var url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`
 
     fetch(url)
