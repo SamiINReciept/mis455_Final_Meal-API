@@ -9,8 +9,8 @@ function connect(){
 }
 
 function display(data) {
-    var id = data.idMeal;
     var name = data.strMeal;
+    var id = data.idMeal;
     var image = data.strMealThumb;
     var area = data.strArea;
     var instructions = data.strInstructions;

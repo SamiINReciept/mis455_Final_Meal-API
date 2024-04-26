@@ -148,8 +148,8 @@ Cards Repsonsive end */
 }
 
 .img-fluid{
-    max-height: 50vh;
-    object-fit: cover;
+    max-height: 45vh;
+    object-fit: fill;
 }
 .card{
     margin-left: 5vw;
@@ -157,7 +157,20 @@ Cards Repsonsive end */
     margin-top: 3vw;
 }
 
+.card-title{
+    font-size: 3rem;
+}
 
+.card-title-meal{
+    font-size: 1.75rem;
+}
+.card-text-area{
+    font-size: 1.75rem;
+}
+
+.card-text{
+    font-size: 1.2rem;
+}
 
 /* .card-body{
     display: flex;
